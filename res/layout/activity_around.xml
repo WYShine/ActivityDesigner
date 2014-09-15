@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/gainsboro" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="周边活动"
+            android:textColor="@color/royalblue"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:id="@+id/around_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_pressed"
+            android:src="@drawable/blue_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <AutoCompleteTextView
+            android:id="@+id/around_edit"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape"
+            android:hint="Search"
+            android:textSize="10dip" 
+            android:layout_marginLeft="5dip">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <TextView
+            android:id="@+id/around_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/around_nextdata"
+            android:layout_alignBottom="@+id/around_nextdata"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/around_nextdata"
+            android:background="@drawable/selector_textview_white"
+            android:text="搜索"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/around_nextdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/selector_textview_white"
+            android:text="下一组数据"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/around_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.20"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/gainsboro" >
+
+        <LinearLayout
+            android:id="@+id/around_around"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="0.33"
+            android:background="@drawable/selector_pressed">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_pressed"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="附近"
+                android:textColor="@color/royalblue"
+                android:textSize="15dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/around_current"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="0.33"
+            android:background="@drawable/selector_pressed">
+
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="当前位置"
+                android:textColor="@color/royalblue"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="0.33"
+            android:id="@+id/around_my"
+            android:background="@drawable/selector_pressed">
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="我的"
+                android:gravity="center"
+                android:textColor="@color/royalblue"
+                android:textSize="15dip" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

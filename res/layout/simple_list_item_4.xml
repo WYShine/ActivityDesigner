@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09" >
+
+        <TextView
+            android:id="@+id/item_4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动标题"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/item_4_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_4_title"
+            android:layout_marginTop="18dp"
+            android:text="活动时间" />
+
+        <TextView
+            android:id="@+id/item_4_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_4_title"
+            android:text="活动日期" />
+
+        <TextView
+            android:id="@+id/item_4_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_4_content2"
+            android:text="活动发起人" />
+
+        <TextView
+            android:id="@+id/item_4_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_4_content3"
+            android:layout_alignBottom="@+id/item_4_content3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="好"
+            android:textColor="@color/royalblue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

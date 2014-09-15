@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="54dip"
+    android:background="#a9a9a9"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/main_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_pressed"
+        android:src="@drawable/main_01" />
+
+    <ImageButton
+        android:id="@+id/main_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_02"
+        android:background="@drawable/selector_pressed"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/main_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_pressed"
+        android:layout_weight="1"
+        android:src="@drawable/main_03" />
+
+    <ImageButton
+        android:id="@+id/main_around"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_pressed"
+        android:layout_weight="1"
+        android:src="@drawable/main_04" />
+
+</LinearLayout>

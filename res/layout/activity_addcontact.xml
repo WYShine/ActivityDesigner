@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/first_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skyblue"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/contact_edit"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="6dip"
+                android:layout_weight="0.8"
+                android:hint="输入用户名字"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/gray" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/skyblue" />
+
+            <Button
+                android:id="@+id/contact_search"
+                android:layout_width="80dip"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dip"
+                android:layout_weight="0.62"
+                android:background="@color/skyblue"
+                android:paddingRight="6dip"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contact_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingLeft="2dip"
+                android:paddingTop="6dip"
+                android:text="联系人列表" />
+
+            <ListView
+                android:id="@+id/contact_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip" 
+               >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/contact_sure"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="18dip" />
+
+                <Button
+                    android:id="@+id/contact_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:text="返回"
+                    android:textColor="@color/white"
+                    android:textSize="18dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

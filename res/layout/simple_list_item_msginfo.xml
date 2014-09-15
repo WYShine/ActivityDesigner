@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_msginfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="活动名称" 
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/item_msginfo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动日期" 
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/item_msginfo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动时间"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/item_msginfo_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动地点" 
+            android:textColor="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/item_msginfo_sponsor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动发起人" 
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/item_msginfo_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="19dp"
+                
+                android:text="好"
+                android:textColor="@color/royalblue" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

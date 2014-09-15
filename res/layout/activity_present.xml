@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/gray_1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="当前活动"
+            android:textColor="@color/royalblue"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:id="@+id/present_back"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_pressed"
+            android:gravity="center"
+            android:src="@drawable/blue_arrow" />
+
+        <ImageView
+            android:id="@+id/present_add"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:gravity="center"
+            android:src="@drawable/small_add" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/gainsboro" >
+
+        <AutoCompleteTextView
+            android:id="@+id/present_edit"
+            android:layout_width="220dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Search"
+            android:textSize="10sp" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <TextView
+            android:id="@+id/present_edit_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/present_edit"
+            android:layout_alignBottom="@+id/present_edit"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@+id/present_edit"
+            android:background="@drawable/selector_textview_white"
+            android:gravity="center"
+            android:text="Search"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/present_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

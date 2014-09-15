@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main_title"
+     android:background="#a9a9a9"
+     >
+     
+     <ImageView
+         android:id="@+id/main_profile"
+         android:layout_width="60dip"
+         android:layout_height="60dip"
+         android:layout_alignBottom="@+id/textView3"
+         android:src="@drawable/left_profile"
+         android:background="@drawable/selector_pressed"
+         />
+
+     <TextView
+         android:id="@+id/text1"
+         android:layout_width="fill_parent"
+         android:layout_height="60dip"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/textView1"
+         android:gravity="center"
+         android:text="Activity Designer"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#ffffff" />
+
+     <ImageView
+         android:id="@+id/main_add_right"
+         android:layout_width="32dip"
+         android:layout_height="32dip"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="10dip"
+         android:src="@drawable/small_add" />
+
+</RelativeLayout>

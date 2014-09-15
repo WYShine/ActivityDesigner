@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="bottom"
+        android:background="@color/royalblue"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/offline_previousMonth"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/desc_previous_month"
+                android:onClick="onMenuImageClick"
+                android:src="@drawable/img_arrow_left" />
+
+            <TextView
+                android:id="@+id/offline_gregorian"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/demo"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/offline_nextMonth"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:contentDescription="@string/desc_next_month"
+                android:onClick="onMenuImageClick"
+                android:src="@drawable/img_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/offline_lunar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:text="@string/demo"
+                android:textColor="@color/color_calendar_title_lunar"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right" >
+
+            <ImageView
+                android:id="@+id/offline_cloud"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:onClick="onMenuImageClick"
+                android:src="@drawable/icon_cloud" />
+
+            <ImageView
+                android:id="@+id/offline_today"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="20dip"
+                android:contentDescription="@string/desc_today"
+                android:onClick="onMenuImageClick"
+                android:layout_gravity="center"
+                android:src="@drawable/img_today" />
+
+            <ImageView
+                android:id="@+id/offline_list"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="20dip"
+                android:contentDescription="@string/desc_popup_menu"
+                android:onClick="onMenuImageClick"
+                android:layout_gravity="center"
+                android:src="@drawable/img_option_menu" />
+
+            <ImageView
+                android:id="@+id/offline_add"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:onClick="onMenuImageClick"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar_add" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/offline_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
